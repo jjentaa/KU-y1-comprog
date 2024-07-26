@@ -111,7 +111,7 @@ txt2 = input("Input list2: ")
 
 # ls1 = ast.literal_eval(txt1)
 # ls2 = ast.literal_eval(txt2)
-
+#dosen't use ast but i don't want to delete my effort
 ls1 = eval(txt1)
 ls2 = eval(txt2)
 
