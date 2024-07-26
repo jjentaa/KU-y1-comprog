@@ -123,6 +123,7 @@ ast = AST()
 
     #check element and type
 
+#dosen't use ast but i don't want to delete my effort
 txt = input("Enter a list of objects: ")
 ls = eval(txt)
 
