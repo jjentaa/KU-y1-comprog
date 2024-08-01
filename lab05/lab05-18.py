@@ -18,14 +18,6 @@ def canConcat(text):
     if(letter2counter.count(0)): return False
     return True
 
-def canConcat(text):
-    letter_set = []
-    for i in text:
-        if(97<=ord(i)<=122 and i not in letter_set): letter_set.append(i)
-    for j in range(97, 123):
-        if(chr(j) not in letter_set): return False
-    return True
-
 def concat(l1, l2):
     unique_ls = []
     for i in range(len(l1)):
@@ -37,9 +29,6 @@ def concat(l1, l2):
 
 txt1 = input("String set1: ")
 txt2 = input("String set2: ")
-
-# ls1 = txt2ls(txt1)
-# ls2 = txt2ls(txt2)
 
 ls1 = eval(txt1)
 ls2 = eval(txt2)
