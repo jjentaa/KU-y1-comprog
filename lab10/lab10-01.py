@@ -21,7 +21,7 @@ class Fraction:
         self.said_suan_low()
 
     def said_suan_low(self):
-        gcd = self._find_gcd(abs(self.numerator), abs(self.denominator))
+        gcd = self.find_gcd(abs(self.numerator), abs(self.denominator))
         self.numerator //= gcd
         self.denominator //= gcd
         if self.denominator < 0:
@@ -29,7 +29,7 @@ class Fraction:
             self.denominator = -self.denominator
 
     @staticmethod
-    def _find_gcd(a, b):
+    def find_gcd(a, b):
         while b:
             a, b = b, a % b
         return a
